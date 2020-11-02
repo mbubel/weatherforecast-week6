@@ -1,0 +1,34 @@
+h2 {
+  text-align: center;
+}
+
+#fiveDayForecast {
+  text-align: center;
+  font-weight: bold;
+}
+
+#currentDay {
+  border-style: solid;
+}
+
+.col-mini-box {
+  margin: auto;
+}
+
+#currentCity {
+  font-weight: bold;
+}
+
+#fiveDay {
+    font-weight: bold;
+}
+
+.col-mini-box {
+    background-color:rgba(34, 146, 238, 0.87);
+}
+#search {
+    font-weight: bold;
+}
+#uvIndex {
+    background-color: red;
+}

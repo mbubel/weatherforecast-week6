@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-3" id="search">Search for city</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchField"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn">
+            Search
+          </button>
+        </div>
+        <div class="list-group">
+          <div class="list-group-item">Austin</div>
+          <div class="list-group-item">San Diego</div>
+          <div class="list-group-item">Portland</div>
+          <div class="list-group-item">San Fran</div>
+          <div class="list-group-item">San Antonio</div>
+          <div class="list-group-item">New York</div>
+        </div>
+      </div>
+
+      <div class="col-sm-9">
+        <div class="row" id="currentDay">
+          <div class="menu-category">
+            <div class="menu-item" id="currentCity">Current City:</div>
+            <div class="menu-item" id="temp">Temp:</div>
+            <div class="menu-item" id="humidity">Humidity:</div>
+            <div class="menu-item" id="windSpeed">Wind Speed:</div>
+            <div class="menu-item">UV Index: <span id="uvIndex"></span></div>
+          </div>
+        </div>
+
+        <div class="row" id="fiveDay">5-day Forecast:</div>
+        <div class="row">
+          <div class="col-mini-box menu-category">
+            <div class="menu-item">11/01/2020</div>
+            <div class="menu-item" id="dayOneWeather">Weather: </div>
+            <div class="menu-item" id="dayOneTemp">Temp: </div>
+            <div class="menu-item" id="dayOneHumidity">Humidity: </div>
+          </div>
+          <div class="col-mini-box menu-category">
+            <div class="menu-item">11/02/2020</div>
+            <div class="menu-item">Picture</div>
+            <div class="menu-item">Temp: 12837819</div>
+            <div class="menu-item">Humidity: 1</div>
+          </div>
+          <div class="col-mini-box menu-category">
+            <div class="menu-item">11/03/2020</div>
+            <div class="menu-item">Picture</div>
+            <div class="menu-item">Temp: 12837819</div>
+            <div class="menu-item">Humidity: 1</div>
+          </div>
+          <div class="col-mini-box menu-category">
+            <div class="menu-item">11/04/2020</div>
+            <div class="menu-item">Picture</div>
+            <div class="menu-item">Temp: 12837819</div>
+            <div class="menu-item">Humidity: 1</div>
+          </div>
+          <div class="col-mini-box menu-category">
+            <div class="menu-item">11/05/2020</div>
+            <div class="menu-item">Picture</div>
+            <div class="menu-item">Temp: 12837819</div>
+            <div class="menu-item">Humidity: 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
