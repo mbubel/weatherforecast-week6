@@ -9,29 +9,57 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
-    <title>Weather Forecast</title>
+    <title>Weather Forecast Test</title>
   </head>
+  <h1>Weather Forecast Test</h1>
   <body>
-    <div class="row">
-      <div class="col-sm-3" id="search">Search for city</div>
-    </div>
-
+    <!-- Search Bar -->
+    <h2>Search for a City:</h2>
     <div class="row">
       <div class="col-sm-3">
-        <div class="form-inline">
+        <form class="form-inline">
           <input
             class="form-control mr-sm-2"
-            type="search"
+            type="Search"
             placeholder="Search"
             aria-label="Search"
             id="searchField"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn">
-            Search
+          <button class="btn btn-outline-success my-2 my-sm-2" id="searchBtn">
+            <!-- Magnifying glass -->
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-search"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+              />
+            </svg>
           </button>
-        </div>
+        </form>
+      </div>
+    </div>
+    <!-- List of City Text Holders -->
+    <div class="row">
+      <div class="col-sm-1" id="cityPlaceHolder">
         <div class="list-group">
           <div class="list-group-item">Austin</div>
           <div class="list-group-item">San Diego</div>
@@ -42,48 +70,72 @@
         </div>
       </div>
 
-      <div class="col-sm-9">
-        <div class="row" id="currentDay">
-          <div class="menu-category">
-            <div class="menu-item" id="currentCity">Current City:</div>
-            <div class="menu-item" id="temp">Temp:</div>
-            <div class="menu-item" id="humidity">Humidity:</div>
-            <div class="menu-item" id="windSpeed">Wind Speed:</div>
-            <div class="menu-item">UV Index: <span id="uvIndex"></span></div>
-          </div>
+      <div class="col-sm-11">
+        <div class="menu-category" id="currentDay">
+          <div class="menu-item" id="currentCity">Current City:</div>
+          <div class="menu-item" id="temp">Temp:</div>
+          <div class="menu-item" id="humidity">Humidity:</div>
+          <div class="menu-item" id="windSpeed">Wind Speed:</div>
+          <div class="menu-item">UV Index: <span id="uvIndex"></span></div>
         </div>
-
-        <div class="row" id="fiveDay">5-day Forecast:</div>
-        <div class="row">
-          <div class="col-mini-box menu-category">
-            <div class="menu-item" id="dayOneDate">Date:</div>
-            <div class="menu-item" id="dayOneWeather">Weather: </div>
-            <div class="menu-item" id="dayOneTemp">Temp: </div>
-            <div class="menu-item" id="dayOneHumidity">Humidity: </div>
+        <h2>5 Day Forecast:</h2>
+        <div class="row" id="fiveDayPlaceHolder">
+          <div class="col">
+            <!-- Day One -->
+            <div class="card" style="width: 18rem">
+              <div class="bg-primary" id="dayOne">
+                <h5 class="card-title" id="dayOneDate">Day 1</h5>
+                <p class="card-text" id="dayOneWeather">Weather:</p>
+                <p class="card-text" id="dayOneTemp">Temp:</p>
+                <p class="card-text" id="dayOneHumidity">Humidity:</p>
+              </div>
+            </div>
           </div>
-          <div class="col-mini-box menu-category">
-            <div class="menu-item" id="dayTwoDate">Date:</div>
-            <div class="menu-item" id="dayTwoWeather">Weather: </div>
-            <div class="menu-item" id="dayTwoTemp">Temp: </div>
-            <div class="menu-item" id="dayTwoHumidity">Humidity: </div>
+          <div class="col">
+            <!-- Day Two -->
+            <div class="card" style="width: 18rem">
+              <div class="bg-primary" id="dayTwo">
+                <h5 class="card-title" id="dayTwoDate">Day 2</h5>
+                <p class="card-text" id="dayTwoWeather">Weather:</p>
+                <p class="card-text" id="dayTwoTemp">Temp:</p>
+                <p class="card-text" id="dayTwoHumidity">Humidity:</p>
+              </div>
+            </div>
           </div>
-          <div class="col-mini-box menu-category">
-            <div class="menu-item" id="dayThreeDate">Date:</div>
-            <div class="menu-item" id="dayThreeWeather">Weather: </div>
-            <div class="menu-item" id="dayThreeTemp">Temp: </div>
-            <div class="menu-item" id="dayThreeHumidity">Humidity: </div>
+          <div class="col">
+            <!-- Day Three -->
+            <div class="card" style="width: 18rem">
+              <div class="card" style="width: 18rem">
+                <div class="bg-primary" id="dayThree">
+                  <h5 class="card-title" id="dayThreeDate">Day 3</h5>
+                  <p class="card-text" id="dayThreeWeather">Weather:</p>
+                  <p class="card-text" id="dayThreeTemp">Temp:</p>
+                  <p class="card-text" id="dayThreeHumidity">Humidity:</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-mini-box menu-category">
-            <div class="menu-item" id="dayFourDate">Date:</div>
-            <div class="menu-item" id="dayFourWeather">Weather: </div>
-            <div class="menu-item" id="dayFourTemp">Temp: </div>
-            <div class="menu-item" id="dayFourHumidity">Humidity: </div>
+          <div class="col">
+            <!-- Day Four -->
+            <div class="card" style="width: 18rem">
+              <div class="bg-primary" id="dayFour">
+                <h5 class="card-title" id="dayFourDate">Day 4</h5>
+                <p class="card-text" id="dayFourWeather">Weather:</p>
+                <p class="card-text" id="dayFourTemp">Temp:</p>
+                <p class="card-text" id="dayFourHumidity">Humidity:</p>
+              </div>
+            </div>
           </div>
-          <div class="col-mini-box menu-category">
-            <div class="menu-item" id="dayFiveDate">Date:</div>
-            <div class="menu-item" id="dayFiveWeather">Weather: </div>
-            <div class="menu-item" id="dayFiveTemp">Temp: </div>
-            <div class="menu-item" id="dayFiveHumidity">Humidity: </div>
+          <div class="col">
+            <!-- Day Five -->
+            <div class="card" style="width: 18rem">
+              <div class="bg-primary" id="dayFive">
+                <h5 class="card-title" id="dayFiveDate">Day 5</h5>
+                <p class="card-text" id="dayFiveWeather">Weather:</p>
+                <p class="card-text" id="dayFiveTemp">Temp:</p>
+                <p class="card-text" id="dayFiveHumidity">Humidity:</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,34 +1,27 @@
+h1 {
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+#searchBar {
+  margin-left: 0.5em;
+}
+
+
+#currentCityPlaceHolder {
+  border: solid;
+  border-width: 1px;
+}
+
+#fiveDayPlaceHolder {
+  color: white;
+}
+
 h2 {
-  text-align: center;
+    font-weight: bold;
 }
-
-#fiveDayForecast {
-  text-align: center;
-  font-weight: bold;
-}
-
-#currentDay {
-  border-style: solid;
-}
-
-.col-mini-box {
-  margin: auto;
-}
-
 #currentCity {
   font-weight: bold;
-}
-
-#fiveDay {
-    font-weight: bold;
-}
-
-.col-mini-box {
-    background-color:rgba(34, 146, 238, 0.87);
-}
-#search {
-    font-weight: bold;
-}
-#uvIndex {
-    background-color: red;
+  font-size: xx-large;
 }
