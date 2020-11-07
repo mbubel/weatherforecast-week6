@@ -1,1 +1,3 @@
-# weatherforecast-week6
+I've created a weather forecast that will show the current day, as well as the next five day forecast for any city you enter. The current day will show the city name, temperature, humidity, and UV Index, and the five day forecast will show the date, an icon depicting the weather conditions, temperature, and humidty. It will save the cities in local storage which can be easily accessed by the user to the left, underneath the, "Search for a City:" section.
+
+https://mbubel.github.io/weatherforecast-week6/
