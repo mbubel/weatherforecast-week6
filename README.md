@@ -2,7 +2,7 @@ I've created a weather forecast that will show the current day, as well as the n
 
 https://mbubel.github.io/weatherforecast-week6/
 
-Page on Initial Load: ![Page on initial load](./assets/images/Weather-Forecast-One.png) 
+![](images/Weather-Forecast-One.png)
 Page after User inputs information: ![Page after User inputs information](./assets/images/Weather-Forecast-Two.png) 
 
 License
